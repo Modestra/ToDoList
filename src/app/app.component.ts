@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'task-ul',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  list:string[] = [];
+  constructor() {
 
+  }
+  ngOnInit(){
+
+  }
+  createTask({option}: { option: string }){
+    this.tasks.push(option)
+    console.log(this.list)
+  }
+  @Output() tasks = this.list;
 }
