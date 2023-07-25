@@ -7,18 +7,7 @@ ___
 - **Angular** <img src="src/favicon.ico" style = "width: 15px">
 - **Bootstrap** <img src="src/assets/bootstrap.png" style = "width: 15px">
 ___
-<link href="./readme/readmestyle.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <div class="row" style="padding-left: 20px; padding-right: 20px">
-            <div class="card-group" style="margin-top: 20px">
-                <div class="card">
-                    <header class="card-header main-container text-center"><h4>Список задач</h4></header>
-                    <section class="card-body main-container-body h-100">
-                      Здесь будут находиться задачи пользователя
-                    </section>
-                </div>
-            </div>
-        </div>
+![image](https://github.com/Modestra/ToDoList/assets/104451159/c1b3e27a-ec39-4dab-8e14-b7c520421ec3)
 
 ___
 
@@ -28,35 +17,22 @@ ___
 
 >**Компонент расположен в директории: _/src/app_**
 
-  <ul class="list-group" id="task-list">
-    <li class="list-group-item">
-        <input id="create" type="text" class="form-control col" placeholder="Текст вводится сюда. По нажатию клавиши Enter создается сама форма задачи" (keydown.enter)="createTask({option : option.value})">
-    </li>
-  </ul>
+![image](https://github.com/Modestra/ToDoList/assets/104451159/e8faf460-5a7c-423d-9103-ab983fd7da8d)
 
 #### task
 **Форма задачи**
 
 >**Компонент расположен в директории: _/src/app/task_**
 
-<ul class="list-group" id="task-list" style="padding-left: 20px; padding-right: 20px">
-<li class="list-group-item list-group-item-action">
-  <div class="row">
-    <div class="col-sm-1"><button type="button" class="btn btn-outline-warning"><img src="./src/assets/favourite.png"></button></div>
-    <div class="col"><p class="task-text">Текст самой задачи. Здесь будет быть всё что угодно, кроме изображений</p></div>
-    <div class="col-sm-1"><button type="button" class="btn btn-success"><img src="./src/assets/complete.png"></button></div>
-    <div class="col-sm-1"><button type="button" class="btn btn-warning"><img src="./src/assets/process.png"></button></div>
-  </div>
-</li>
-</ul>
+![image](https://github.com/Modestra/ToDoList/assets/104451159/f72ef2cb-e8ae-4c47-a6f3-2c41da68f94e)
 
 ###### **Элементы:** 
 
 | Кнопка                                                                                                                             | Функция                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <div class="col-sm-1"><button type="button" class="btn btn-outline-warning"><img src="./src/assets/favourite.png"></button></div>  | Избранные задачи                                                                             |
-| <div class="col-sm-1"><button type="button" class="btn btn-success"><img src="./src/assets/complete.png"></button></div>           | Выполненная задача. Цвет карточни становится лаймовым. Реализован через функцию ToComplete() |
-| <div class="col-sm-1"><button type="button" class="btn btn-warning"><img src="./src/assets/process.png"></button></div>            | "В процессе" Цвет карточки становится желтым. Реализован через функцию ToProcess()           |
+| <img src="./src/assets/favourite.png" style=" width: 100px; height: 100px">  | Избранные задачи                                                              |
+| <img src="./src/assets/complete.png" style=" width: 100px; height: 100px">           | Выполненная задача. Цвет карточки становится лаймовым. Реализован через функцию ToComplete() |
+| <img src="./src/assets/process.png" style=" width: 100px; height: 100px">            | "В процессе" Цвет карточки становится желтым. Реализован через функцию ToProcess()           |
 
 ___
 
