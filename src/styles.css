@@ -4,18 +4,17 @@
 body{
   background: rgba(229, 229, 229, 0.75);
 }
-.main-container-start{
-  background: #ff2727;
-  border-bottom: 2px solid black;
-}
-.main-container-process{
-  background: #fdfd00;
-  border-bottom: 2px solid black;
-}
-.main-container-end{
-  background: #00ff00;
+.main-container{
+  background: rgba(201, 201, 201, 0.74);
   border-bottom: 2px solid black;
 }
 .main-container-body{
   height: 400px;
+}
+.task-status{
+  background-color: rgba(255, 0, 0, 0.59);
+}
+.task-text{
+  font-size: 20px;
+  text-decoration-line: underline;
 }
