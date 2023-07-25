@@ -1,27 +1,68 @@
-# Todolist
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+# <img src="src/favicon.ico" style = "width: 30px"> To-Do List 
+**Сделайте то, что давно собирались сделать**
+___
+## Основные framework-и:
 
-## Development server
+- **Angular** <img src="src/favicon.ico" style = "width: 15px">
+- **Bootstrap** <img src="src/assets/bootstrap.png" style = "width: 15px">
+___
+<link href="./readme/readmestyle.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <div class="row" style="padding-left: 20px; padding-right: 20px">
+            <div class="card-group" style="margin-top: 20px">
+                <div class="card">
+                    <header class="card-header main-container text-center"><h4>Список задач</h4></header>
+                    <section class="card-body main-container-body h-100">
+                      Здесь будут находиться задачи пользователя
+                    </section>
+                </div>
+            </div>
+        </div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+___
 
-## Code scaffolding
+## Компоненты:
+#### task-ul:
+**Основной компонент для реализации списка дел. Включает в себя форму для записи задачи**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+>**Компонент расположен в директории: _/src/app_**
 
-## Build
+  <ul class="list-group" id="task-list">
+    <li class="list-group-item">
+        <input id="create" type="text" class="form-control col" placeholder="Текст вводится сюда. По нажатию клавиши Enter создается сама форма задачи" (keydown.enter)="createTask({option : option.value})">
+    </li>
+  </ul>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### task
+**Форма задачи**
 
-## Running unit tests
+>**Компонент расположен в директории: _/src/app/task_**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<ul class="list-group" id="task-list" style="padding-left: 20px; padding-right: 20px">
+<li class="list-group-item list-group-item-action">
+  <div class="row">
+    <div class="col-sm-1"><button type="button" class="btn btn-outline-warning"><img src="./src/assets/favourite.png"></button></div>
+    <div class="col"><p class="task-text">Текст самой задачи. Здесь будет быть всё что угодно, кроме изображений</p></div>
+    <div class="col-sm-1"><button type="button" class="btn btn-success"><img src="./src/assets/complete.png"></button></div>
+    <div class="col-sm-1"><button type="button" class="btn btn-warning"><img src="./src/assets/process.png"></button></div>
+  </div>
+</li>
+</ul>
 
-## Running end-to-end tests
+###### **Элементы:** 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+| Кнопка                                                                                                                             | Функция                                                                                      |
+|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| <div class="col-sm-1"><button type="button" class="btn btn-outline-warning"><img src="./src/assets/favourite.png"></button></div>  | Избранные задачи                                                                             |
+| <div class="col-sm-1"><button type="button" class="btn btn-success"><img src="./src/assets/complete.png"></button></div>           | Выполненная задача. Цвет карточни становится лаймовым. Реализован через функцию ToComplete() |
+| <div class="col-sm-1"><button type="button" class="btn btn-warning"><img src="./src/assets/process.png"></button></div>            | "В процессе" Цвет карточки становится желтым. Реализован через функцию ToProcess()           |
 
-## Further help
+___
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Полезные ссылки для связи со мной:
+
+- **Мой [GitLab](https://gitlab.com/petsites/sweetdreams) с основными проектами**
+- **Мой [Telegram](https://t.me/Modestra)**
+- **Мой сайт-портфолио (Пока ссылки нет потому что меняю хостинг) с ссылками на другие рабочие сайты-проекты**
+
